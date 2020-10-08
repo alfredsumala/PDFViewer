@@ -15,22 +15,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe right to select a story from the menu." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLm-4b-Ubx">
-                                <rect key="frame" x="43" y="438" width="334" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe right to select a PDF file." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLm-4b-Ubx">
+                                <rect key="frame" x="91" y="438" width="238" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-c2-x7c" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LHO-c2-x7c" firstAttribute="trailing" secondItem="t12-nf-Q9p" secondAttribute="trailing" id="F5Q-Yc-ExJ"/>
+                            <constraint firstItem="LHO-c2-x7c" firstAttribute="leading" secondItem="t12-nf-Q9p" secondAttribute="leading" id="V9V-XH-KXj"/>
+                            <constraint firstItem="LHO-c2-x7c" firstAttribute="bottom" secondItem="t12-nf-Q9p" secondAttribute="bottom" id="jkx-VJ-oMS"/>
+                            <constraint firstItem="LHO-c2-x7c" firstAttribute="top" secondItem="t12-nf-Q9p" secondAttribute="top" id="rJ7-fj-oL4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="t12-nf-Q9p"/>
                     </view>
                     <navigationItem key="navigationItem" id="gBZ-Cb-1We"/>
+                    <connections>
+                        <outlet property="pdfView" destination="LHO-c2-x7c" id="LiM-GS-rR8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90v-3R-pkD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="153"/>
+            <point key="canvasLocation" x="637.68115942028987" y="152.67857142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hJL-nV-lHB">
@@ -48,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="-233" y="-540"/>
         </scene>
-        <!--Stories-->
+        <!--PDF Files-->
         <scene sceneID="JXZ-1G-5Zo">
             <objects>
                 <viewController id="WCD-Ux-sME" customClass="MasterViewController" sceneMemberID="viewController">
@@ -92,7 +105,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WW6-n8-f7x"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Stories" id="H0W-gI-wFO"/>
+                    <navigationItem key="navigationItem" title="PDF Files" id="H0W-gI-wFO"/>
                     <connections>
                         <outlet property="tableView" destination="0bL-PC-bVs" id="y5d-Ud-zMI"/>
                     </connections>

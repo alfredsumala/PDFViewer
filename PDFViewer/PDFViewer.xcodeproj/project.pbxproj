@@ -20,6 +20,12 @@
 		BFD99BD4252EBDF600668D9A /* adventures-of-sherlock-holmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BD1252EBDF500668D9A /* adventures-of-sherlock-holmes.pdf */; };
 		BFD99BD5252EBDF600668D9A /* relativity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BD2252EBDF500668D9A /* relativity.pdf */; };
 		BFD99BD6252EBDF600668D9A /* contents.xml in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BD3252EBDF500668D9A /* contents.xml */; };
+		BFD99BDB252F615300668D9A /* PDFPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BDA252F615300668D9A /* PDFPresenter.m */; };
+		BFD99BE2252F816D00668D9A /* UIWindow+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE1252F816D00668D9A /* UIWindow+Orientation.m */; };
+		BFD99BE5252F82B800668D9A /* PDFFileListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE4252F82B800668D9A /* PDFFileListPresenter.m */; };
+		BFD99BE8252F88F100668D9A /* XMLObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */; };
+		BFD99BEB252F8EA400668D9A /* PDFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BEA252F8EA400668D9A /* PDFModel.m */; };
+		BFD99BEE252F8EE300668D9A /* Contents.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BED252F8EE300668D9A /* Contents.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,19 @@
 		BFD99BD1252EBDF500668D9A /* adventures-of-sherlock-holmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "adventures-of-sherlock-holmes.pdf"; sourceTree = "<group>"; };
 		BFD99BD2252EBDF500668D9A /* relativity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = relativity.pdf; sourceTree = "<group>"; };
 		BFD99BD3252EBDF500668D9A /* contents.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = contents.xml; sourceTree = "<group>"; };
+		BFD99BD9252F615300668D9A /* PDFPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFPresenter.h; sourceTree = "<group>"; };
+		BFD99BDA252F615300668D9A /* PDFPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFPresenter.m; sourceTree = "<group>"; };
+		BFD99BE0252F816D00668D9A /* UIWindow+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Orientation.h"; sourceTree = "<group>"; };
+		BFD99BE1252F816D00668D9A /* UIWindow+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Orientation.m"; sourceTree = "<group>"; };
+		BFD99BE3252F82B800668D9A /* PDFFileListPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFFileListPresenter.h; sourceTree = "<group>"; };
+		BFD99BE4252F82B800668D9A /* PDFFileListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFFileListPresenter.m; sourceTree = "<group>"; };
+		BFD99BE6252F88F100668D9A /* XMLObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLObjectMapper.h; sourceTree = "<group>"; };
+		BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLObjectMapper.m; sourceTree = "<group>"; };
+		BFD99BE9252F8EA400668D9A /* PDFModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFModel.h; sourceTree = "<group>"; };
+		BFD99BEA252F8EA400668D9A /* PDFModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFModel.m; sourceTree = "<group>"; };
+		BFD99BEC252F8EE300668D9A /* Contents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contents.h; sourceTree = "<group>"; };
+		BFD99BED252F8EE300668D9A /* Contents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contents.m; sourceTree = "<group>"; };
+		BFD99BF1252F947C00668D9A /* XMLMappedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLMappedObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +115,11 @@
 		BFD99BA0252EACE000668D9A /* PDFViewer */ = {
 			isa = PBXGroup;
 			children = (
-				BFD99BCF252EBDB200668D9A /* ViewControllers */,
+				BFD99BEF252F93CF00668D9A /* Mapper */,
+				BFD99BDC252F7F7A00668D9A /* Helpers */,
+				BFD99BD8252F60ED00668D9A /* Model */,
+				BFD99BCF252EBDB200668D9A /* View */,
+				BFD99BD7252F60D300668D9A /* Presenter */,
 				BFD99BD0252EBDDA00668D9A /* resources */,
 				BFD99BA1252EACE000668D9A /* AppDelegate.h */,
 				BFD99BA2252EACE000668D9A /* AppDelegate.m */,
@@ -120,7 +143,7 @@
 			path = PDFViewerTests;
 			sourceTree = "<group>";
 		};
-		BFD99BCF252EBDB200668D9A /* ViewControllers */ = {
+		BFD99BCF252EBDB200668D9A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				BFD99BCB252EBC7D00668D9A /* SplitViewController.h */,
@@ -130,7 +153,7 @@
 				BFD99BC8252EB8A100668D9A /* DetailViewController.h */,
 				BFD99BC9252EB8A100668D9A /* DetailViewController.m */,
 			);
-			path = ViewControllers;
+			path = View;
 			sourceTree = "<group>";
 		};
 		BFD99BD0252EBDDA00668D9A /* resources */ = {
@@ -141,6 +164,47 @@
 				BFD99BD2252EBDF500668D9A /* relativity.pdf */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		BFD99BD7252F60D300668D9A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99BD9252F615300668D9A /* PDFPresenter.h */,
+				BFD99BDA252F615300668D9A /* PDFPresenter.m */,
+				BFD99BE3252F82B800668D9A /* PDFFileListPresenter.h */,
+				BFD99BE4252F82B800668D9A /* PDFFileListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BFD99BD8252F60ED00668D9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99BE9252F8EA400668D9A /* PDFModel.h */,
+				BFD99BEA252F8EA400668D9A /* PDFModel.m */,
+				BFD99BEC252F8EE300668D9A /* Contents.h */,
+				BFD99BED252F8EE300668D9A /* Contents.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD99BDC252F7F7A00668D9A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99BE0252F816D00668D9A /* UIWindow+Orientation.h */,
+				BFD99BE1252F816D00668D9A /* UIWindow+Orientation.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BFD99BEF252F93CF00668D9A /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99BF1252F947C00668D9A /* XMLMappedObject.h */,
+				BFD99BE6252F88F100668D9A /* XMLObjectMapper.h */,
+				BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +312,15 @@
 			files = (
 				BFD99BCA252EB8A100668D9A /* DetailViewController.m in Sources */,
 				BFD99BCD252EBC7D00668D9A /* SplitViewController.m in Sources */,
+				BFD99BDB252F615300668D9A /* PDFPresenter.m in Sources */,
 				BFD99BA9252EACE000668D9A /* MasterViewController.m in Sources */,
+				BFD99BE8252F88F100668D9A /* XMLObjectMapper.m in Sources */,
 				BFD99BA3252EACE000668D9A /* AppDelegate.m in Sources */,
 				BFD99BB4252EACE400668D9A /* main.m in Sources */,
+				BFD99BEE252F8EE300668D9A /* Contents.m in Sources */,
+				BFD99BE2252F816D00668D9A /* UIWindow+Orientation.m in Sources */,
+				BFD99BE5252F82B800668D9A /* PDFFileListPresenter.m in Sources */,
+				BFD99BEB252F8EA400668D9A /* PDFModel.m in Sources */,
 				BFD99BA6252EACE000668D9A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,17 +8,22 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "PDFFileListPresenter.h"
 
 @interface MasterViewController ()
 @property IBOutlet UITableView *tableView;
 
 @property DetailViewController *detailViewController;
+
+@property PDFFileListPresenter *listPresenter;
 @end
 
 @implementation MasterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _listPresenter = [[PDFFileListPresenter alloc] initWithBundle:NSBundle.mainBundle fileName:@"contents"];
     
     self.tableView.dataSource = self;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
@@ -38,7 +43,7 @@
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [_listPresenter fileNames].count;
 }
 
 #pragma mark - Navigation
@@ -50,6 +55,7 @@
 //        controller.detailItem = object;
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
+        controller.pdfPresenter = [[PDFPresenter alloc] initWithFileName:@"relativity.pdf"];
         self.detailViewController = controller;
     }
 }
