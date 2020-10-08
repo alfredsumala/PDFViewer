@@ -16,8 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    if ([UIDevice.currentDevice userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setImage:[UIImage systemImageNamed:@"sidebar.left"] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(toggleMenu) forControlEvents:UIControlEventTouchUpInside];
+        
+        UIBarButtonItem * customButton = [[UIBarButtonItem alloc] initWithCustomView:button];
+        self.navigationItem.leftBarButtonItem = customButton;
+
+    }
 }
 
-
+#pragma mark - Selector
+-(void)toggleMenu {
+    self.splitViewController.preferredDisplayMode = self.splitViewController.displayMode == UISplitViewControllerDisplayModeAllVisible ? UISplitViewControllerDisplayModeAutomatic : UISplitViewControllerDisplayModeAllVisible;
+}
 @end
