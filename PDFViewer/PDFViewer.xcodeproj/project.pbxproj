@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFD99BA3252EACE000668D9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BA2252EACE000668D9A /* AppDelegate.m */; };
+		BFD99BA6252EACE000668D9A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BA5252EACE000668D9A /* SceneDelegate.m */; };
+		BFD99BA9252EACE000668D9A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BA8252EACE000668D9A /* MasterViewController.m */; };
+		BFD99BAC252EACE000668D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BAA252EACE000668D9A /* Main.storyboard */; };
+		BFD99BAE252EACE400668D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BAD252EACE400668D9A /* Assets.xcassets */; };
+		BFD99BB1252EACE400668D9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BAF252EACE400668D9A /* LaunchScreen.storyboard */; };
+		BFD99BB4252EACE400668D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BB3252EACE400668D9A /* main.m */; };
+		BFD99BBE252EACE400668D9A /* PDFViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BBD252EACE400668D9A /* PDFViewerTests.m */; };
+		BFD99BCA252EB8A100668D9A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BC9252EB8A100668D9A /* DetailViewController.m */; };
+		BFD99BCD252EBC7D00668D9A /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BCC252EBC7D00668D9A /* SplitViewController.m */; };
+		BFD99BD4252EBDF600668D9A /* adventures-of-sherlock-holmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BD1252EBDF500668D9A /* adventures-of-sherlock-holmes.pdf */; };
+		BFD99BD5252EBDF600668D9A /* relativity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BD2252EBDF500668D9A /* relativity.pdf */; };
+		BFD99BD6252EBDF600668D9A /* contents.xml in Resources */ = {isa = PBXBuildFile; fileRef = BFD99BD3252EBDF500668D9A /* contents.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFD99BBA252EACE400668D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFD99B96252EACE000668D9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFD99B9D252EACE000668D9A;
+			remoteInfo = PDFViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFD99B9E252EACE000668D9A /* PDFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD99BA1252EACE000668D9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BFD99BA2252EACE000668D9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFD99BA4252EACE000668D9A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		BFD99BA5252EACE000668D9A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		BFD99BA7252EACE000668D9A /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		BFD99BA8252EACE000668D9A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		BFD99BAB252EACE000668D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFD99BAD252EACE400668D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFD99BB0252EACE400668D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFD99BB2252EACE400668D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD99BB3252EACE400668D9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFD99BB9252EACE400668D9A /* PDFViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD99BBD252EACE400668D9A /* PDFViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFViewerTests.m; sourceTree = "<group>"; };
+		BFD99BBF252EACE400668D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD99BC8252EB8A100668D9A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BFD99BC9252EB8A100668D9A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BFD99BCB252EBC7D00668D9A /* SplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
+		BFD99BCC252EBC7D00668D9A /* SplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
+		BFD99BD1252EBDF500668D9A /* adventures-of-sherlock-holmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "adventures-of-sherlock-holmes.pdf"; sourceTree = "<group>"; };
+		BFD99BD2252EBDF500668D9A /* relativity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = relativity.pdf; sourceTree = "<group>"; };
+		BFD99BD3252EBDF500668D9A /* contents.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = contents.xml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFD99B9B252EACE000668D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD99BB6252EACE400668D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFD99B95252EACE000668D9A = {
+			isa = PBXGroup;
+			children = (
+				BFD99BA0252EACE000668D9A /* PDFViewer */,
+				BFD99BBC252EACE400668D9A /* PDFViewerTests */,
+				BFD99B9F252EACE000668D9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFD99B9F252EACE000668D9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99B9E252EACE000668D9A /* PDFViewer.app */,
+				BFD99BB9252EACE400668D9A /* PDFViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFD99BA0252EACE000668D9A /* PDFViewer */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99BCF252EBDB200668D9A /* ViewControllers */,
+				BFD99BD0252EBDDA00668D9A /* resources */,
+				BFD99BA1252EACE000668D9A /* AppDelegate.h */,
+				BFD99BA2252EACE000668D9A /* AppDelegate.m */,
+				BFD99BA4252EACE000668D9A /* SceneDelegate.h */,
+				BFD99BA5252EACE000668D9A /* SceneDelegate.m */,
+				BFD99BAA252EACE000668D9A /* Main.storyboard */,
+				BFD99BAD252EACE400668D9A /* Assets.xcassets */,
+				BFD99BAF252EACE400668D9A /* LaunchScreen.storyboard */,
+				BFD99BB2252EACE400668D9A /* Info.plist */,
+				BFD99BB3252EACE400668D9A /* main.m */,
+			);
+			path = PDFViewer;
+			sourceTree = "<group>";
+		};
+		BFD99BBC252EACE400668D9A /* PDFViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99BBD252EACE400668D9A /* PDFViewerTests.m */,
+				BFD99BBF252EACE400668D9A /* Info.plist */,
+			);
+			path = PDFViewerTests;
+			sourceTree = "<group>";
+		};
+		BFD99BCF252EBDB200668D9A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99BCB252EBC7D00668D9A /* SplitViewController.h */,
+				BFD99BCC252EBC7D00668D9A /* SplitViewController.m */,
+				BFD99BA7252EACE000668D9A /* MasterViewController.h */,
+				BFD99BA8252EACE000668D9A /* MasterViewController.m */,
+				BFD99BC8252EB8A100668D9A /* DetailViewController.h */,
+				BFD99BC9252EB8A100668D9A /* DetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BFD99BD0252EBDDA00668D9A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFD99BD1252EBDF500668D9A /* adventures-of-sherlock-holmes.pdf */,
+				BFD99BD3252EBDF500668D9A /* contents.xml */,
+				BFD99BD2252EBDF500668D9A /* relativity.pdf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFD99B9D252EACE000668D9A /* PDFViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFD99BC2252EACE400668D9A /* Build configuration list for PBXNativeTarget "PDFViewer" */;
+			buildPhases = (
+				BFD99B9A252EACE000668D9A /* Sources */,
+				BFD99B9B252EACE000668D9A /* Frameworks */,
+				BFD99B9C252EACE000668D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFViewer;
+			productName = PDFViewer;
+			productReference = BFD99B9E252EACE000668D9A /* PDFViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFD99BB8252EACE400668D9A /* PDFViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFD99BC5252EACE400668D9A /* Build configuration list for PBXNativeTarget "PDFViewerTests" */;
+			buildPhases = (
+				BFD99BB5252EACE400668D9A /* Sources */,
+				BFD99BB6252EACE400668D9A /* Frameworks */,
+				BFD99BB7252EACE400668D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFD99BBB252EACE400668D9A /* PBXTargetDependency */,
+			);
+			name = PDFViewerTests;
+			productName = PDFViewerTests;
+			productReference = BFD99BB9252EACE400668D9A /* PDFViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFD99B96252EACE000668D9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Alfred Sumala";
+				TargetAttributes = {
+					BFD99B9D252EACE000668D9A = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					BFD99BB8252EACE400668D9A = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BFD99B9D252EACE000668D9A;
+					};
+				};
+			};
+			buildConfigurationList = BFD99B99252EACE000668D9A /* Build configuration list for PBXProject "PDFViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFD99B95252EACE000668D9A;
+			productRefGroup = BFD99B9F252EACE000668D9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFD99B9D252EACE000668D9A /* PDFViewer */,
+				BFD99BB8252EACE400668D9A /* PDFViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFD99B9C252EACE000668D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD99BB1252EACE400668D9A /* LaunchScreen.storyboard in Resources */,
+				BFD99BAE252EACE400668D9A /* Assets.xcassets in Resources */,
+				BFD99BAC252EACE000668D9A /* Main.storyboard in Resources */,
+				BFD99BD6252EBDF600668D9A /* contents.xml in Resources */,
+				BFD99BD4252EBDF600668D9A /* adventures-of-sherlock-holmes.pdf in Resources */,
+				BFD99BD5252EBDF600668D9A /* relativity.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD99BB7252EACE400668D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFD99B9A252EACE000668D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD99BCA252EB8A100668D9A /* DetailViewController.m in Sources */,
+				BFD99BCD252EBC7D00668D9A /* SplitViewController.m in Sources */,
+				BFD99BA9252EACE000668D9A /* MasterViewController.m in Sources */,
+				BFD99BA3252EACE000668D9A /* AppDelegate.m in Sources */,
+				BFD99BB4252EACE400668D9A /* main.m in Sources */,
+				BFD99BA6252EACE000668D9A /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD99BB5252EACE400668D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD99BBE252EACE400668D9A /* PDFViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFD99BBB252EACE400668D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFD99B9D252EACE000668D9A /* PDFViewer */;
+			targetProxy = BFD99BBA252EACE400668D9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFD99BAA252EACE000668D9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFD99BAB252EACE000668D9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFD99BAF252EACE400668D9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFD99BB0252EACE400668D9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFD99BC0252EACE400668D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFD99BC1252EACE400668D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFD99BC3252EACE400668D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G2GRY45SD;
+				INFOPLIST_FILE = PDFViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredsumala.PDFViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFD99BC4252EACE400668D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G2GRY45SD;
+				INFOPLIST_FILE = PDFViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredsumala.PDFViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFD99BC6252EACE400668D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G2GRY45SD;
+				INFOPLIST_FILE = PDFViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredsumala.PDFViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFViewer.app/PDFViewer";
+			};
+			name = Debug;
+		};
+		BFD99BC7252EACE400668D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G2GRY45SD;
+				INFOPLIST_FILE = PDFViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredsumala.PDFViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFViewer.app/PDFViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFD99B99252EACE000668D9A /* Build configuration list for PBXProject "PDFViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD99BC0252EACE400668D9A /* Debug */,
+				BFD99BC1252EACE400668D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFD99BC2252EACE400668D9A /* Build configuration list for PBXNativeTarget "PDFViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD99BC3252EACE400668D9A /* Debug */,
+				BFD99BC4252EACE400668D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFD99BC5252EACE400668D9A /* Build configuration list for PBXNativeTarget "PDFViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD99BC6252EACE400668D9A /* Debug */,
+				BFD99BC7252EACE400668D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFD99B96252EACE000668D9A /* Project object */;
+}
