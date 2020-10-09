@@ -67,7 +67,6 @@
 }
 
 -(id<XMLMappedObject>)mapper:(XMLObjectMapper *)mapper startElementNamed:(NSString *)elementName withAttributes:(NSDictionary *)attributes currentObject:(id<XMLMappedObject>)currentObject {
-    NSLog(@"%@", elementName);
     
     //initialize a PDFItem
     if ([elementName isEqualToString:@"pdf-item"]) {
@@ -82,7 +81,6 @@
     return nil;
 }
 - (void)mapper:(nonnull XMLObjectMapper *)mapper endElementNamed:(nonnull NSString *)elementName currentObject:(nonnull id<XMLMappedObject>)currentObject completed:(BOOL)completed {
-    NSLog(@"end %@", elementName);
     
     if (completed) {
         _completionBlock();

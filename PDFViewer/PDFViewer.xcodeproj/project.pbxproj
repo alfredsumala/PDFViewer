@@ -25,6 +25,7 @@
 		BFD99BE5252F82B800668D9A /* PDFFileListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE4252F82B800668D9A /* PDFFileListPresenter.m */; };
 		BFD99BE8252F88F100668D9A /* XMLObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */; };
 		BFD99BEB252F8EA400668D9A /* PDFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BEA252F8EA400668D9A /* PDFItem.m */; };
+		BFD99BF62530564B00668D9A /* PDFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BF52530564B00668D9A /* PDFCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLObjectMapper.m; sourceTree = "<group>"; };
 		BFD99BE9252F8EA400668D9A /* PDFItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFItem.h; sourceTree = "<group>"; };
 		BFD99BEA252F8EA400668D9A /* PDFItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFItem.m; sourceTree = "<group>"; };
+		BFD99BF42530564B00668D9A /* PDFCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFCell.h; sourceTree = "<group>"; };
+		BFD99BF52530564B00668D9A /* PDFCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				BFD99BA8252EACE000668D9A /* MasterViewController.m */,
 				BFD99BC8252EB8A100668D9A /* DetailViewController.h */,
 				BFD99BC9252EB8A100668D9A /* DetailViewController.m */,
+				BFD99BF42530564B00668D9A /* PDFCell.h */,
+				BFD99BF52530564B00668D9A /* PDFCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				BFD99BE2252F816D00668D9A /* UIWindow+Orientation.m in Sources */,
 				BFD99BE5252F82B800668D9A /* PDFFileListPresenter.m in Sources */,
 				BFD99BEB252F8EA400668D9A /* PDFItem.m in Sources */,
+				BFD99BF62530564B00668D9A /* PDFCell.m in Sources */,
 				BFD99BA6252EACE000668D9A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
