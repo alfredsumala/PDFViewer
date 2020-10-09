@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PDFModel.h"
+#import "PDFItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Contents : NSObject
-@property NSArray<PDFModel*> *pdfList;
+@property NSArray<PDFItem*> *pdfList;
 
 @end
 

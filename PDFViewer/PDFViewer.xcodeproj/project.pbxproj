@@ -24,7 +24,7 @@
 		BFD99BE2252F816D00668D9A /* UIWindow+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE1252F816D00668D9A /* UIWindow+Orientation.m */; };
 		BFD99BE5252F82B800668D9A /* PDFFileListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE4252F82B800668D9A /* PDFFileListPresenter.m */; };
 		BFD99BE8252F88F100668D9A /* XMLObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */; };
-		BFD99BEB252F8EA400668D9A /* PDFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BEA252F8EA400668D9A /* PDFModel.m */; };
+		BFD99BEB252F8EA400668D9A /* PDFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BEA252F8EA400668D9A /* PDFItem.m */; };
 		BFD99BEE252F8EE300668D9A /* Contents.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BED252F8EE300668D9A /* Contents.m */; };
 /* End PBXBuildFile section */
 
@@ -69,11 +69,10 @@
 		BFD99BE4252F82B800668D9A /* PDFFileListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFFileListPresenter.m; sourceTree = "<group>"; };
 		BFD99BE6252F88F100668D9A /* XMLObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLObjectMapper.h; sourceTree = "<group>"; };
 		BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLObjectMapper.m; sourceTree = "<group>"; };
-		BFD99BE9252F8EA400668D9A /* PDFModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFModel.h; sourceTree = "<group>"; };
-		BFD99BEA252F8EA400668D9A /* PDFModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFModel.m; sourceTree = "<group>"; };
+		BFD99BE9252F8EA400668D9A /* PDFItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFItem.h; sourceTree = "<group>"; };
+		BFD99BEA252F8EA400668D9A /* PDFItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFItem.m; sourceTree = "<group>"; };
 		BFD99BEC252F8EE300668D9A /* Contents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contents.h; sourceTree = "<group>"; };
 		BFD99BED252F8EE300668D9A /* Contents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contents.m; sourceTree = "<group>"; };
-		BFD99BF1252F947C00668D9A /* XMLMappedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLMappedObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +179,8 @@
 		BFD99BD8252F60ED00668D9A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BFD99BE9252F8EA400668D9A /* PDFModel.h */,
-				BFD99BEA252F8EA400668D9A /* PDFModel.m */,
+				BFD99BE9252F8EA400668D9A /* PDFItem.h */,
+				BFD99BEA252F8EA400668D9A /* PDFItem.m */,
 				BFD99BEC252F8EE300668D9A /* Contents.h */,
 				BFD99BED252F8EE300668D9A /* Contents.m */,
 			);
@@ -200,7 +199,6 @@
 		BFD99BEF252F93CF00668D9A /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
-				BFD99BF1252F947C00668D9A /* XMLMappedObject.h */,
 				BFD99BE6252F88F100668D9A /* XMLObjectMapper.h */,
 				BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */,
 			);
@@ -320,7 +318,7 @@
 				BFD99BEE252F8EE300668D9A /* Contents.m in Sources */,
 				BFD99BE2252F816D00668D9A /* UIWindow+Orientation.m in Sources */,
 				BFD99BE5252F82B800668D9A /* PDFFileListPresenter.m in Sources */,
-				BFD99BEB252F8EA400668D9A /* PDFModel.m in Sources */,
+				BFD99BEB252F8EA400668D9A /* PDFItem.m in Sources */,
 				BFD99BA6252EACE000668D9A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

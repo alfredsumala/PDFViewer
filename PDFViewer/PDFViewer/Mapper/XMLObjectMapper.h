@@ -10,13 +10,28 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol XMLObjectMapperDelegate
+@class XMLObjectMapper;
 
-
+@protocol XMLMappedObject <NSObject>
+- (void)mapper:(XMLObjectMapper *)mapper foundString:(NSString *)string forElementNamed:(NSString *)elementName;
 @end
 
-@interface XMLObjectMapper : NSObject<NSXMLParserDelegate>
--(nullable instancetype)initWithUrl:(NSURL*)url;
+@protocol XMLObjectMapperDelegate <NSObject>
+- (id <XMLMappedObject>)mapper:(XMLObjectMapper *)mapper startElementNamed:(NSString *)elementName withAttributes:(NSDictionary *)attributes currentObject:(id <XMLMappedObject>)currentObject;
+
+- (void)mapper:(XMLObjectMapper *)mapper endElementNamed:(NSString *)elementName currentObject:(id <XMLMappedObject>)currentObject completed:(BOOL)completed;
 @end
+
+@interface XMLObjectMapper : NSObject
+@property (nonatomic, weak) id <XMLObjectMapperDelegate> delegate;
+
+-(nullable instancetype)initWithData:(NSData*)data;
+-(NSArray*)mappedObjects;
+-(void)start;
+@end
+
+
+
+
 
 NS_ASSUME_NONNULL_END

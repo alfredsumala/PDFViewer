@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PDFPresenter : NSObject
--(instancetype)initWithFileName:(NSString*)fileName;
+-(instancetype)initWithFileName:(NSString*)filename;
 -(nullable PDFDocument*)loadCurrentPDFDocument;
 -(nullable PDFDocument*)loadPDFDocumentWithFileName:(NSString *)title;
 @end

@@ -13,9 +13,7 @@
 @interface MasterViewController ()
 @property IBOutlet UITableView *tableView;
 
-@property DetailViewController *detailViewController;
-
-@property PDFFileListPresenter *listPresenter;
+@property (strong, nonatomic) PDFFileListPresenter *listPresenter;
 @end
 
 @implementation MasterViewController
@@ -23,10 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _listPresenter = [[PDFFileListPresenter alloc] initWithBundle:NSBundle.mainBundle fileName:@"contents"];
+    _listPresenter = [[PDFFileListPresenter alloc] initWithBundle:NSBundle.mainBundle filename:@"contents"];
+    [_listPresenter startMappingWithCallBack:^{
+        [self.tableView reloadData];
+    }];
     
     self.tableView.dataSource = self;
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -38,25 +38,24 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"cell" forIndexPath:indexPath];
-    cell.textLabel.text = @"This is a title";
+    cell.textLabel.text = [_listPresenter descriptions][indexPath.row];
     return cell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_listPresenter fileNames].count;
+    return [_listPresenter filenames].count;
 }
 
 #pragma mark - Navigation
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showDetail"]) {
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        NSDate *object = self.objects[indexPath.row];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-//        controller.detailItem = object;
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
-        controller.pdfPresenter = [[PDFPresenter alloc] initWithFileName:@"relativity.pdf"];
-        self.detailViewController = controller;
+        
+        controller.pdfPresenter = [[PDFPresenter alloc] initWithFileName: [_listPresenter filenames][indexPath.row]];
     }
 }
 

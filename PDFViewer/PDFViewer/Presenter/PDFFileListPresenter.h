@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PDFFileListPresenter : NSObject<NSXMLParserDelegate>
--(instancetype)initWithBundle:(NSBundle*)bundle fileName:(NSString*)fileName;
--(NSArray*)fileNames;
+@interface PDFFileListPresenter : NSObject
+-(instancetype)initWithBundle:(NSBundle*)bundle filename:(NSString*)filename;
+-(NSArray*)filenames;
+-(NSArray*)descriptions;
+-(void)startMappingWithCallBack:(void (^)(void))completion;
 @end
 
 NS_ASSUME_NONNULL_END

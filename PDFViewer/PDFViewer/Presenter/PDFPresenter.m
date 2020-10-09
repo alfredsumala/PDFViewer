@@ -9,15 +9,15 @@
 #import "PDFPresenter.h"
 
 @interface PDFPresenter()
-@property NSString *fileName;
+@property NSString *filename;
 @end
 
 @implementation PDFPresenter
 
--(instancetype)initWithFileName:(NSString *)fileName {
+-(instancetype)initWithFileName:(NSString *)filename {
     self = [super init];
     if(self){
-        self.fileName = fileName;
+        self.filename = filename;
     }
     
     return self;
@@ -34,6 +34,6 @@
 }
 
 -(nullable PDFDocument*)loadCurrentPDFDocument {
-    return [self loadPDFDocumentWithFileName:self.fileName];
+    return [self loadPDFDocumentWithFileName:self.filename];
 }
 @end

@@ -10,6 +10,5 @@
 
 @interface MasterViewController : UIViewController <UITableViewDataSource>
 
-
 @end
 
