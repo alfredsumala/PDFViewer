@@ -20,6 +20,8 @@
     
     [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(rotated) name:UIDeviceOrientationDidChangeNotification object:nil];
     
+    [self rotated];
+    
     self.pdfView.autoScales = YES;
     
     [self loadPDF];

@@ -52,8 +52,6 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
 
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-        controller.navigationItem.leftItemsSupplementBackButton = YES;
         
         controller.pdfPresenter = [[PDFPresenter alloc] initWithFileName: [_listPresenter filenames][indexPath.row]];
     }

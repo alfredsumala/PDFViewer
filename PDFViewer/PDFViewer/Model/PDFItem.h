@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PDFItem : NSObject <XMLMappedObject>
 @property (nonatomic) NSString *filename;
 @property (nonatomic) NSString *desc;
-//-(instancetype)initWithTitle:(NSString*)title description:(NSString*)description;
 @end
 
 NS_ASSUME_NONNULL_END

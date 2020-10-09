@@ -25,7 +25,6 @@
 		BFD99BE5252F82B800668D9A /* PDFFileListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE4252F82B800668D9A /* PDFFileListPresenter.m */; };
 		BFD99BE8252F88F100668D9A /* XMLObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */; };
 		BFD99BEB252F8EA400668D9A /* PDFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BEA252F8EA400668D9A /* PDFItem.m */; };
-		BFD99BEE252F8EE300668D9A /* Contents.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD99BED252F8EE300668D9A /* Contents.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +70,6 @@
 		BFD99BE7252F88F100668D9A /* XMLObjectMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLObjectMapper.m; sourceTree = "<group>"; };
 		BFD99BE9252F8EA400668D9A /* PDFItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFItem.h; sourceTree = "<group>"; };
 		BFD99BEA252F8EA400668D9A /* PDFItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFItem.m; sourceTree = "<group>"; };
-		BFD99BEC252F8EE300668D9A /* Contents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contents.h; sourceTree = "<group>"; };
-		BFD99BED252F8EE300668D9A /* Contents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contents.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +178,6 @@
 			children = (
 				BFD99BE9252F8EA400668D9A /* PDFItem.h */,
 				BFD99BEA252F8EA400668D9A /* PDFItem.m */,
-				BFD99BEC252F8EE300668D9A /* Contents.h */,
-				BFD99BED252F8EE300668D9A /* Contents.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,7 +310,6 @@
 				BFD99BE8252F88F100668D9A /* XMLObjectMapper.m in Sources */,
 				BFD99BA3252EACE000668D9A /* AppDelegate.m in Sources */,
 				BFD99BB4252EACE400668D9A /* main.m in Sources */,
-				BFD99BEE252F8EE300668D9A /* Contents.m in Sources */,
 				BFD99BE2252F816D00668D9A /* UIWindow+Orientation.m in Sources */,
 				BFD99BE5252F82B800668D9A /* PDFFileListPresenter.m in Sources */,
 				BFD99BEB252F8EA400668D9A /* PDFItem.m in Sources */,

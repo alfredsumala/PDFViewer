@@ -15,6 +15,8 @@
 @property NSString* contentFilename;
 @property XMLObjectMapper* mapper;
 @property (nonatomic, copy) void (^completionBlock)(void);
+@property BOOL retrieveImages;
+@property int imageCount;
 @end
 
 @implementation PDFFileListPresenter
@@ -72,9 +74,15 @@
         return [[PDFItem alloc] init];
     }
     
+    if ([elementName isEqualToString:@"image-list"]) {
+        self.retrieveImages = [attributes[@"retrieve_images"] isEqualToString:@"true"] ? YES : NO;
+        self.imageCount = [attributes[@"image_count"] intValue];
+    }
+    
     return nil;
 }
 - (void)mapper:(nonnull XMLObjectMapper *)mapper endElementNamed:(nonnull NSString *)elementName currentObject:(nonnull id<XMLMappedObject>)currentObject completed:(BOOL)completed {
+    NSLog(@"end %@", elementName);
     
     if (completed) {
         _completionBlock();
